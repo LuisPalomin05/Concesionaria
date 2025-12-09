@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Concesionaria</h1>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="~/images/carro.jpg" class="img-fluid rounded" alt="Carro">
+            </div>
+
+            <div class="col-md-8 d-flex flex-column">
+
+                <div class="d-flex justify-content-between mb-3">
+                    <p class="fw-bold m-0">Mis Ventas</p>
+                    <a href="@Url.Action("Index", "Concesionaria")" class="btn btn-primary btn-sm">
+                        Listar Ventas
+                    </a>
+                    <a href="@Url.Action("Create", "Concesionaria")" class="btn btn-primary btn-sm">
+                        + Nueva Venta
+                    </a>
+                </div>
+
+                <div>
+                    <!-- Ejemplo de contenido -->
+                    <p>Contenido adicional debajo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

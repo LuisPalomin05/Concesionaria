@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Concesionaria/Concesionaria.csproj" />
+  <Project Path="ConcesionariaWeb/ConcesionariaWeb.csproj" Id="dabbc9c4-2812-48f2-89da-7cadd5bc66f3" />
 </Solution>
