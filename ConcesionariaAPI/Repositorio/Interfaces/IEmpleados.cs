@@ -8,7 +8,7 @@ namespace ConcesionariaAPI.Repositorio.Interfaces
     {
         IEnumerable<Empleados> ListarEmpleados();
 
-
+        Empleados InsertarEmpleado(Empleados empleados);
 
     }
 }

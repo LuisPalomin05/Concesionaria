@@ -11,8 +11,5 @@
         public string emailCliente { get; set; } = string.Empty;
         public DateTime fechaNacimientoCliente { get; set; }
 
-
-
-
     }
 }

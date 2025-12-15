@@ -9,7 +9,7 @@ namespace Concesionaria.Repositorio.Interfaces
         IEnumerable<Clientes> ListarClientes();
         IEnumerable<Clientes> BuscarClientesPorDNI(string nombre);
 
-
+        Clientes InsertarCliente(Clientes clientes);
 
 
     }

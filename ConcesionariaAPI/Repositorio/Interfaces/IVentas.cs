@@ -8,6 +8,8 @@ namespace ConcesionariaAPI.Repositorio.Interfaces
     {
         IEnumerable<Ventas> ListarVentas();
 
+        Ventas CrearVenta(Ventas venta);
+
 
 
     }

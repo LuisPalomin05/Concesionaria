@@ -2,14 +2,13 @@
 {
     public class Vehiculos
     {
-        public int idVehiculo { get; set; }
-        public string marcaVehiculo { get; set; } = string.Empty;
-        public string modeloVehiculo { get; set; } = string.Empty;
-        public int anioVehiculo { get; set; }
-        public decimal precioVehiculo { get; set; }
-        public int disponibilidadVehiculo { get; set; }
-        public string colorVehiculo { get; set; } = string.Empty;
-        public int descripcionVehiculo { get; set; }
+        public int IdVehiculo { get; set; }
+        public string MarcaVehiculo { get; set; } = string.Empty;
+        public string ModeloVehiculo { get; set; } = string.Empty;
+        public decimal PrecioVehiculo { get; set; }
+        public int StockVehiculo { get; set; }
+        public string ColorVehiculo { get; set; } = string.Empty;
+        public string DescripcionVehiculo { get; set; } = string.Empty;
 
 
     }

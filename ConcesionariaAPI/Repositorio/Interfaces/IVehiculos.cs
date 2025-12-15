@@ -8,7 +8,7 @@ namespace ConcesionariaAPI.Repositorio.Interfaces
     {
         IEnumerable<Vehiculos> ListarVehiculos();
 
-
+        Vehiculos InsertarVehiculo(Vehiculos vehiculos);
 
 
     }
