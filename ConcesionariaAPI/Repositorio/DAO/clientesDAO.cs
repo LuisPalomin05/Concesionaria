@@ -4,7 +4,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ConcesionariaAPI.Repositorio.DAO
 {
-    public class clientesDAO: IClientes
+    public class clientesDAO : IClientes
     {
         private readonly string cadena = string.Empty;
 
@@ -105,6 +105,6 @@ namespace ConcesionariaAPI.Repositorio.DAO
             return lista;
         }
 
-    
-}
+
+    }
 }

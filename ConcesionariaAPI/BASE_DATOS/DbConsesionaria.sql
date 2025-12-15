@@ -176,3 +176,79 @@ BEGIN
     SELECT SCOPE_IDENTITY() AS idCliente;
 END;
 GO
+
+----------------------------------------------------
+CREATE PROCEDURE sp_insertar_vehiculo
+(
+    @marcaVehiculo VARCHAR(50),
+    @modeloVehiculo VARCHAR(50),
+    @precioVehiculo DECIMAL(10,2),
+    @stockVehiculo INT,
+    @colorVehiculo VARCHAR(30),
+    @descripcionVehiculo VARCHAR(200)
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Vehiculos
+    (
+        marcaVehiculo,
+        modeloVehiculo,
+        precioVehiculo,
+        stockVehiculo,
+        colorVehiculo,
+        descripcionVehiculo
+    )
+    VALUES
+    (
+        @marcaVehiculo,
+        @modeloVehiculo,
+        @precioVehiculo,
+        @stockVehiculo,
+        @colorVehiculo,
+        @descripcionVehiculo
+    );
+
+    SELECT SCOPE_IDENTITY();
+END;
+GO
+
+
+------------------------------------------------
+
+CREATE PROCEDURE sp_insertar_empleado
+(
+    @nombreEmpleado     VARCHAR(50),
+    @apellidoEmpleado   VARCHAR(50),
+    @dniEmpleado        VARCHAR(15),
+    @direccionEmpleado  VARCHAR(100),
+    @telefonoEmpleado   VARCHAR(20),
+    @emailEmpleado      VARCHAR(100)
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Empleados
+    (
+        nombreEmpleado,
+        apellidoEmpleado,
+        dniEmpleado,
+        direccionEmpleado,
+        telefonoEmpleado,
+        emailEmpleado
+    )
+    VALUES
+    (
+        @nombreEmpleado,
+        @apellidoEmpleado,
+        @dniEmpleado,
+        @direccionEmpleado,
+        @telefonoEmpleado,
+        @emailEmpleado
+    );
+
+    SELECT SCOPE_IDENTITY();
+END;
+GO
