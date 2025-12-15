@@ -1,0 +1,68 @@
+#se requiere en la base de datos "Concesionaria"
+#Tablas
+#1. Clientes
+#2. Vehiculos
+#2.1 TipoVehiculos
+#2.1 ModeloVehiculos
+#3. Ventas
+#4. Empleados
+#4.1 TipoEmpleados
+
+
+#Relaciones
+
+#1. cliente
+-idCliente
+-nombreCliente
+-apellidoCliente
+-dniCliente
+-direccionCliente
+-telefonoCliente
+-emailCliente
+-fechaRegistroCliente
+
+#2. vehiculos
+-idVehiculo
+-marcaVehiculo
+-modeloVehiculo (relacion con modeloVehiculo)
+-anioVehiculo
+-tipoVehiculo (relacion con TipoVehiculos)
+-precioVehiculo
+-disponibilidadVehiculo
+-colorVehiculo
+-descripcionVehiculo
+
+
+#2.1 tipoVehiculos
+-idTipoVehiculo
+-nombreTipoVehiculo
+
+#2.2 modeloVehiculo
+-idModeloVehiculo
+-nombreModeloVehiculo
+
+
+#3. Empleados
+-idEmpleado
+-nombreEmpleado
+-apellidoEmpleado
+-dniEmpleado
+-direccionEmpleado
+-telefonoEmpleado
+-emailEmpleado
+-tipoEmpleado (relacion con TipoEmpleado)
+
+#3.1 TipoEmpleados
+-idTipoEmpleado
+-nombreTipoEmpleado
+
+#4. Ventas
+-idVenta
+-idCliente (relacion con Clientes)
+-idVehiculo (relacion con Vehiculos)
+-idEmpleado (relacion con Empleados)
+-fechaVenta
+-precioVenta
+-metodoPago
+-estadoVenta
+
