@@ -1,8 +1,8 @@
 ﻿
 
-using Concesionaria.Models;
+using ConcesionariaAPI.Models;
 
-namespace Concesionaria.Repositorio.Interfaces
+namespace ConcesionariaAPI.Repositorio.Interfaces
 {
     public interface IClientes
     {

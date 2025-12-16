@@ -1,4 +1,4 @@
-﻿namespace Concesionaria.Models
+﻿namespace ConcesionariaAPI.Models
 {
     public class Clientes
     {

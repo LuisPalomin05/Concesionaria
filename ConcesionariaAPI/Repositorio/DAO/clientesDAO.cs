@@ -1,5 +1,5 @@
-﻿using Concesionaria.Models;
-using Concesionaria.Repositorio.Interfaces;
+﻿using ConcesionariaAPI.Models;
+using ConcesionariaAPI.Repositorio.Interfaces;
 using Microsoft.Data.SqlClient;
 
 namespace ConcesionariaAPI.Repositorio.DAO
